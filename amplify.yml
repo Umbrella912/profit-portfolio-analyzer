@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - mkdir -p site-output/sample-data
+        - cp index.html style.css script.js site-output/
+        - cp sample-data/*.csv site-output/sample-data/
+  artifacts:
+    baseDirectory: site-output
+    files:
+      - '**/*'
+  cache:
+    paths: []
