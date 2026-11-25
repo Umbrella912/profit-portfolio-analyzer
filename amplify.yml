@@ -5,7 +5,8 @@ frontend:
       commands:
         - mkdir -p site-output/sample-data
         - cp index.html style.css script.js site-output/
-        - cp sample-data/*.csv site-output/sample-data/
+        # Optional: copy sample CSVs (used by "Load Superstore data") only if present
+        - if ls sample-data/*.csv >/dev/null 2>&1; then cp sample-data/*.csv site-output/sample-data/; else echo "No sample-data/*.csv found - skipping"; fi
   artifacts:
     baseDirectory: site-output
     files:
