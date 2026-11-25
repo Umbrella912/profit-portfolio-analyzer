@@ -26,8 +26,8 @@ from pptx.oxml.ns import qn
 from pptx.util import Emu, Inches, Pt
 
 # ----------------------------------------------------------------- settings
-LIVE_URL = "https://main.YOUR-APP-ID.amplifyapp.com"   # <- replace with your Amplify URL
-LIVE_LABEL = "main.YOUR-APP-ID.amplifyapp.com"
+LIVE_URL = "https://main.d3fevib98outvi.amplifyapp.com/"
+LIVE_LABEL = "main.d3fevib98outvi.amplifyapp.com"
 GITHUB_URL = "https://github.com/Umbrella912/profit-portfolio-analyzer"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Profit-Portfolio-Analyzer.pptx")
 
